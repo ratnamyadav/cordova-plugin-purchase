@@ -43,7 +43,7 @@ SOFTWARE.
     <!-- ios -->
     <platform name="ios">
         <js-module src="www/store-ios.js" name="InAppPurchase">
-            <clobbers target="store" />
+            <clobbers target="inAppstore" />
         </js-module>
 
         <!-- Cordova 2.2 -->
@@ -72,7 +72,7 @@ SOFTWARE.
     <!-- osx -->
     <platform name="osx">
         <js-module src="www/store-ios.js" name="InAppPurchase">
-            <clobbers target="store" />
+            <clobbers target="inAppstore" />
         </js-module>
         <js-module src="www/cordova-osx-polyfill.js" name="CordovaOSXPolyfill">
             <runs />
@@ -101,7 +101,7 @@ SOFTWARE.
     <!-- android -->
     <platform name="android">
       <js-module src="www/store-android.js" name="InAppBillingPlugin">
-        <clobbers target="store" />
+        <clobbers target="inAppstore" />
       </js-module>
       <config-file target="AndroidManifest.xml" parent="/*">
         <uses-permission android:name="com.android.vending.BILLING" />
@@ -127,7 +127,7 @@ SOFTWARE.
     <!-- windows -->
 	<platform name="windows">
 		<js-module src="www/store-windows.js" name="InAppPurchase">
-			<clobbers target="store" />
+			<clobbers target="inAppstore" />
 		</js-module>
 		<js-module src="src/windows/InAppPurchaseProxy.js" name="InAppPurchaseProxy">
 			<merges target="" />
